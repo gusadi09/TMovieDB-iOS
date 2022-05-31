@@ -15,8 +15,8 @@
 		EC12564C2844CC2500A82DB7 /* TMovieDB_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC1256202844CC2400A82DB7 /* TMovieDB_iOS.xcdatamodeld */; };
 		EC12564D2844CC2500A82DB7 /* TMovieDB_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1256222844CC2400A82DB7 /* TMovieDB_iOSApp.swift */; };
 		EC12564E2844CC2500A82DB7 /* TMovieDB_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1256222844CC2400A82DB7 /* TMovieDB_iOSApp.swift */; };
-		EC12564F2844CC2500A82DB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1256232844CC2400A82DB7 /* ContentView.swift */; };
-		EC1256502844CC2500A82DB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1256232844CC2400A82DB7 /* ContentView.swift */; };
+		EC12564F2844CC2500A82DB7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1256232844CC2400A82DB7 /* HomeView.swift */; };
+		EC1256502844CC2500A82DB7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1256232844CC2400A82DB7 /* HomeView.swift */; };
 		EC1256512844CC2500A82DB7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1256242844CC2400A82DB7 /* Persistence.swift */; };
 		EC1256522844CC2500A82DB7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1256242844CC2400A82DB7 /* Persistence.swift */; };
 		EC1256532844CC2500A82DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1256252844CC2500A82DB7 /* Assets.xcassets */; };
@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		EC1256212844CC2400A82DB7 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		EC1256222844CC2400A82DB7 /* TMovieDB_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMovieDB_iOSApp.swift; sourceTree = "<group>"; };
-		EC1256232844CC2400A82DB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC1256232844CC2400A82DB7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EC1256242844CC2400A82DB7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EC1256252844CC2500A82DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC12562A2844CC2500A82DB7 /* TMovieDB-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMovieDB-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,11 +103,8 @@
 		EC12561F2844CC2400A82DB7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				EC1256222844CC2400A82DB7 /* TMovieDB_iOSApp.swift */,
-				EC1256232844CC2400A82DB7 /* ContentView.swift */,
-				EC1256242844CC2400A82DB7 /* Persistence.swift */,
-				EC1256252844CC2500A82DB7 /* Assets.xcassets */,
-				EC1256202844CC2400A82DB7 /* TMovieDB_iOS.xcdatamodeld */,
+				EC1256662845C79900A82DB7 /* Home */,
+				EC1256642845C76F00A82DB7 /* Common */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -147,6 +144,41 @@
 				EC1256492844CC2500A82DB7 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		EC1256632845C76200A82DB7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EC1256222844CC2400A82DB7 /* TMovieDB_iOSApp.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EC1256642845C76F00A82DB7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EC1256652845C77900A82DB7 /* Resource */,
+				EC1256632845C76200A82DB7 /* Base */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EC1256652845C77900A82DB7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EC1256242844CC2400A82DB7 /* Persistence.swift */,
+				EC1256252844CC2500A82DB7 /* Assets.xcassets */,
+				EC1256202844CC2400A82DB7 /* TMovieDB_iOS.xcdatamodeld */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EC1256662845C79900A82DB7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EC1256232844CC2400A82DB7 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +342,7 @@
 				EC12564B2844CC2500A82DB7 /* TMovieDB_iOS.xcdatamodeld in Sources */,
 				EC1256512844CC2500A82DB7 /* Persistence.swift in Sources */,
 				EC12564D2844CC2500A82DB7 /* TMovieDB_iOSApp.swift in Sources */,
-				EC12564F2844CC2500A82DB7 /* ContentView.swift in Sources */,
+				EC12564F2844CC2500A82DB7 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +353,7 @@
 				EC12564C2844CC2500A82DB7 /* TMovieDB_iOS.xcdatamodeld in Sources */,
 				EC1256522844CC2500A82DB7 /* Persistence.swift in Sources */,
 				EC12564E2844CC2500A82DB7 /* TMovieDB_iOSApp.swift in Sources */,
-				EC1256502844CC2500A82DB7 /* ContentView.swift in Sources */,
+				EC1256502844CC2500A82DB7 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
